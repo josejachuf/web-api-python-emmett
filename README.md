@@ -5,7 +5,7 @@
 ## Install emmett and orjson
 pip install emmett orjson
 
-## Start server
+## Start included server
 
 emmett serve --workers 4
 
