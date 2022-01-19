@@ -7,11 +7,11 @@ pip install emmett orjson
 
 ## Start included server
 
-emmett serve --workers 4
+emmett serve --workers 8
 
 more info in https://emmett.sh/docs/2.4.x/deployment#included-server
 
 ## Start server with gunicorn
 pip install gunicorn
 
-gunicorn app:app -w 4 -k emmett.asgi.workers.EmmettWorker
+gunicorn main:app -w 8 -k emmett.asgi.workers.EmmettWorker
